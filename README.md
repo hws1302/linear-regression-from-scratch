@@ -1,5 +1,5 @@
 # data-science-project
-A data science using project for part II physics.
+A data science project for part II physics.
 
 Use data from CHARA telescope array [1] to find telescope positions relative to each other using least-squares regression via Moore-Penrose pseudoinverse.
 Analysis over time to conclude whether significant movement has occured (e.g. due to plate tectonics).
