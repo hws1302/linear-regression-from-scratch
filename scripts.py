@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import networkx as nx
 
 
 def create_design_mat(df, tot_width=False):
@@ -126,6 +127,39 @@ def svd_uncertainty(design_mat, y, beta):
     
     return sigma
 
+def plot_graph(df, day_of_year=-1):
+    
+    if day_of_year != -1:
+        df = df[df.dayofyear == day_of_year]
+
+
+    df['telpop_1'] = df.tel_1 + df.pop_1
+    df['telpop_2'] = df.tel_2 + df.pop_2
+
+    graph_df = df.groupby(['telpop_1','telpop_2']).size().reset_index().rename(columns={0:'count'})
+    G = nx.from_pandas_edgelist(graph_df, source='telpop_1', target='telpop_2')
+
+    nx.draw(G, with_labels=True)
+    plt.show()
+    
+def find_good_days(df, bin_size=1, error_threshold=0.1):
+
+    good_days = []
+
+    for day in range(1, 367):
+        # sets of three days where the max error from actual locations less than 0.1m
+        df_temp = df[
+            (day - (bin_size/2) - 1/2 < df.dayofyear) & (df.dayofyear < day + (bin_size/2) + 1/2)
+        ]
+
+        design_mat, pinv, y, beta = create_design_mat(df_temp)
+
+        beta = beta[:15].reshape(5,3)
+
+        if np.max(abs(actual_locations_2005 - beta)) < error_threshold: 
+            good_days.append(day)
+
+    return good_days
 
 actual_locations_2005 = np.array([
     #[0,0,0], # E1
