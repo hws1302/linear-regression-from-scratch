@@ -55,7 +55,6 @@ def create_design_mat(df):
         tot_unique_pops.append(tel_unique_pops)
         width += len(tel_unique_pops)
 
-
     design_mat = np.zeros((len(df), width))
 
     for i, telescope in enumerate(telescopes):
