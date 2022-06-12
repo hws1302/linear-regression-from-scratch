@@ -3,6 +3,8 @@ This project made up 10% of my part II physics course - it was my first time usi
 
 This can be used to find the positions of the telescopes at different points in time. 
 
+Basic knowledge of NumPy, Pandas and Matplotlib is assumed. 
+
 ![image](https://user-images.githubusercontent.com/64110421/173235328-0011d2b5-f39e-45a7-926c-c3b8e66a7ea2.png)
 
 ## What is the problem 
