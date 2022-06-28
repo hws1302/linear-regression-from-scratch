@@ -6,16 +6,23 @@ This project was taken as 10% of third-year physics at the Univeristy of Cambrid
 
 This project is readily accessible to almost any level of knowledge of maths, physics and coding. 
 
-For those just interested in an overview of how everything fits together, a look at the [tutorial notebook](!!!TUTORIAL!!!.ipynb) and the [project brief](project-brief.pdf) would be just fine. 
+For those just interested in an overview of how everything fits together, a look at the [tutorial notebook](https://colab.research.google.com/github/hws1302/data-science-project/blob/master/!!!TUTORIAL!!!.ipynb) and the [project brief](project-brief.pdf) would be just fine. 
 
 For those wanting to understand things a little deeper I have a few more resource to recommend...
-- [my report](projectE-hs723.pdf) 
-- [the initial paper](https://iopscience.iop.org/article/10.1086/430729/pdf)
+- [My report](projectE-hs723.pdf) 
+- [Initial paper](https://iopscience.iop.org/article/10.1086/430729/pdf)
 - [CHARA website](https://www.chara.gsu.edu/public)
-- [Numerical recipes]() 
+- [Numerical recipes](http://numerical.recipes/) 
 
 I found this project very useful to learn... 
 - Pandas 
 - NumPy arrays and vectorisation
 - Mathematics behind linear regression (design matrices and Moore-Penrose pseudoinverse)
 - $\LaTeX$
+
+Here are some of the cool visualisations ... 
+
+
+<img src="figures/days-2012.png"  width="500">
+
+<img src="figures/2019-SVD-uncertainty.png"  width="500">
