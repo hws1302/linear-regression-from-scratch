@@ -1,4 +1,4 @@
-# Intro to Machine Learning & Data Science: Surveying Stars
+# Linear Regression from Scratch: Surveying Stars
 
 <img src="https://www.discoverlosangeles.com/sites/default/files/images/2019-05/Mount%20Wilson%20Observatory%20mountains.jpg?width=1600&height=1200&fit=crop&quality=78&auto=webp"  width="500">
 
