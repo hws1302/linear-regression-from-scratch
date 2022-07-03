@@ -6,7 +6,9 @@ This project was taken as 10% of third-year physics at the Univeristy of Cambrid
 
 This project is readily accessible to almost any level of knowledge of maths, physics and coding. 
 
-For those just interested in an overview of how everything fits together, a look at the [tutorial notebook](tutorial.ipynb) and the [project brief](project-brief.pdf) would be just fine. 
+For those just interested in an overview of how everything fits together, a look at the [tutorial notebook](https://github.com/hws1302/linear-regression-from-scratch/blob/master/TUTORIAL.ipynb) and the [project brief](project-brief.pdf) would be just fine. 
+
+## [Tutorial notebook here](https://github.com/hws1302/linear-regression-from-scratch/blob/master/TUTORIAL.ipynb)
 
 For those wanting to understand things a little deeper I have a few more resource to recommend...
 - [My report](projectE-hs723.pdf) 
